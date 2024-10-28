@@ -1,42 +1,54 @@
 <html>
 
 <head>
-
+    <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
-    <h4>
+   
+    <h4 class="datos">
+        <img src="img/doctora.jpeg" height="100px" width="100px"><br>
         Doc Ivon Schoedel <br>
         Sat, Oct 6 -1:00 pm EDT <br>
         205 Revere, MA,02151
     </h4>
+
     <IMG src="img/download.jpeg" height="20px" width="100%">
         <meta name="description" content="This a pege for doctor appointment">
     <meta name="author" content="Ivon">
     <meta name="country" content="USA">
     <meta name="company" content="El centro">
-</head>
 <body>
     <header>
         <h1>Medical Appointment</h1>
     </header>
     <main>
         <form action="https://httpbin.org/get">
-
-                <label for="name">First name: </label>
-                <input type="text" name="name">
+<fieldset>
+    <legend>Pacient info</legend>
+    <label for="name">First name: </label>
+    <input type="text" name="name"required>
+    <br>
+    <label for="lastName">Last name: </label>
+    <input type="text" name="lastName"required>
+</fieldset>
+<br>
+<label for="country">country</label><br>
+<select name="country" id="">
+    <option value="es">spain</option>
+    <option value="co">colombia</option>
+    <option value="mx">mexico</option>
+</select>
                 <br>
                 <br>
-                <label for="lastName">Last name: </label>
-                <input type="text" name="lastName">
-                <br>
-                <br>
-                <label for="email">Introduce Email: </label>
-                <input type="email" name="email">
+                <label for="email">Email </label>
+                <input type="email" name="email" placeholder="email@gmail.com">
                 <br>  
+                <label for="pwd">Introduce password: </label>
+                <input type="password" name="pwd" required size="50" maxlength="8">
                 <br>  
                 <label for="age">Age: </label>
-                <input type="number" name="age">
+                <input type="number" name="age" min="18" max="60">
                 <br>
                 <br>
                 <label for="dob">Date of birth: </label>
